@@ -41,6 +41,32 @@ public class MoreExercises {
 			}
 		}
 		//Question 4
+		System.out.print("Enter a word: ");
+		String word = in.nextLine();
+		boolean doubloon;
+		if (word.length() % 2 == 0) {
+			doubloon = false;	
+		}
+		else {
+			char[] chars = new char[(int)(word.length()/2)];
+			for (int i=0; i<(int)(word.length()); i++) {
+				char c = word.charAt(i);
+				for (int j=0; j<chars.length; j++) {
+					if (chars[j] == c) {
+						break;
+					}
+				}
+				
+			}
+		}
+		if (doubloon) {
+			System.out.println(word + " is a doubloon.");
+		}
+		else {
+			System.out.println(word + "is not a doubloon.");
+		}
+		
+		
 		in.close();
 	}
 }

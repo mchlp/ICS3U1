@@ -1,3 +1,9 @@
+/**
+ * Michael Pu
+ * ICS3U1
+ * Finds the factorial of a positive integer.
+ */
+
 package exercises;
 
 import java.util.Scanner;

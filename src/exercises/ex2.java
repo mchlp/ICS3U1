@@ -1,3 +1,9 @@
+/**
+ * Michael Pu
+ * ICS3U1
+ * Finds the greatest and least number out of a list of positive integers 
+ */
+
 package exercises;
 
 import java.util.Scanner;
@@ -23,5 +29,4 @@ public class ex2 {
 		System.out.println("The min number is: " + min);
 		in.close();
 	}
-
 }
