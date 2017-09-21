@@ -5,8 +5,7 @@ import java.util.*;
 public class MoreExercises {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		
-		/**
+	
 		//Question 1
 		System.out.println("Question 1");
 		System.out.print("Enter an integer to add up to: ");
@@ -80,8 +79,6 @@ public class MoreExercises {
 			System.out.println(word + " is not a doubloon.");
 		}
 		
-		
-<<<<<<< HEAD
 		//Question 5
 		System.out.println("Question 5");
 		System.out.print("Enter the number of months that have passed: ");
@@ -122,7 +119,6 @@ public class MoreExercises {
 			}
 		}
 		
-		**/
 		
 		//Question 8
 		System.out.println("Question 8");
