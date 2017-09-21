@@ -55,7 +55,6 @@ public class MoreExercises {
 		}
 		else {
 			for (int i=0; i<word.length(); i++) {
-				char c = word.charAt(i);
 				boolean foundMatch = false;
 				for (int j=0; j<word.length(); j++) {
 					if (j != i) {
