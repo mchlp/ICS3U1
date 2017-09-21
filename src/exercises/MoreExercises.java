@@ -81,6 +81,7 @@ public class MoreExercises {
 		}
 		
 		
+<<<<<<< HEAD
 		//Question 5
 		System.out.println("Question 5");
 		System.out.print("Enter the number of months that have passed: ");
