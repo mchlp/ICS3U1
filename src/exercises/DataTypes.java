@@ -46,7 +46,7 @@ public class DataTypes {
 		
 		System.out.println("The roots are " + x1 + " and " + x2);
 		
-		/**
+		/*
 		 * QUESTION 4
 		 * INPUT: the number of children, seniors, and adults
 		 * OUTPUT: the price of the tickets
