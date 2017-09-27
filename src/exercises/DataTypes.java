@@ -60,6 +60,7 @@ public class DataTypes {
 		int adults = in.nextInt();
 		
 		System.out.println("The total cost of the tickets is $" + ((children*8)+(seniors*6)+(adults*16)));
+		
+		in.close();
 	}
-
 }
