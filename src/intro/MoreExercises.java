@@ -1,4 +1,4 @@
-package exercises;
+package intro;
 
 import java.util.*;
 

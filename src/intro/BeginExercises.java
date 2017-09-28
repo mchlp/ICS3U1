@@ -4,7 +4,7 @@
  * Beginning Exercises
  */
 
-package exercises;
+package intro;
 
 import java.util.Scanner;
 

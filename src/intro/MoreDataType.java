@@ -1,4 +1,4 @@
-package exercises;
+package intro;
 
 import java.util.Scanner;
 
@@ -26,19 +26,25 @@ public class MoreDataType {
 		 * OUTPUT: the number of toonies, loonies, quarters, dimes, and nickels, pennies needed
 		 */
 		
+		final int centsPerTonnie = 200;
+		final int centsPerLoonie = 100;
+		final int centsPerQuarter = 25;
+		final int centsPerDime = 10;
+		final int centsPerNickel = 5;
+		
 		System.out.print("Enter the amount in cents: ");
 		int cents = in.nextInt();
 		in.nextLine();
-		int T = cents/200;
-		cents %= 200;
-		int L = cents/100;
-		cents %= 100;
-		int Q = cents/25;
-		cents %= 25;
-		int D = cents/10;
-		cents %= 10;
-		int N = cents/5;
-		cents %= 5;
+		int T = cents/centsPerTonnie;
+		cents %= centsPerTonnie;
+		int L = cents/centsPerLoonie;
+		cents %= centsPerLoonie;
+		int Q = cents/centsPerQuarter;
+		cents %= centsPerQuarter;
+		int D = cents/centsPerDime;
+		cents %= centsPerDime;
+		int N = cents/centsPerNickel;
+		cents %= centsPerNickel;
 		int P = cents;
 		
 		System.out.println("Return " + T + " toonies, " + L + " loonies, " + Q + " quarters, " + D + " dimes, " + N + " nickels, " + P + " pennies.");
@@ -51,10 +57,12 @@ public class MoreDataType {
 		 * OUTPUT: a positive integer, the number of 
 		 */
 		
+		final double gravity = 9.8;
+		
 		System.out.print("Enter the number of seconds: ");
 		double S = in.nextDouble();
 		in.nextLine();
-		double dis = ((double)1/2)*9.81*(S*S);
+		double dis = ((double)1/2)*gravity*(S*S);
 		System.out.println("In " + S + " seconds, the brick travelled " + dis + " metres.");
 	}
 	
@@ -116,7 +124,7 @@ public class MoreDataType {
 		System.out.println();
 	}
 	
-	public static void Question7() {
+	private static void Question7() {
 		
 		/*
 		 * QUESTION 7
@@ -129,7 +137,7 @@ public class MoreDataType {
 		System.out.println(word.toUpperCase());
 	}
 	
-	public static void Question8() {
+	private static void Question8() {
 		/*
 		 * QUESTION 8
 		 * INPUT: A string of text, a word with an odd number of letters
