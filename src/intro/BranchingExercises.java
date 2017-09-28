@@ -143,11 +143,19 @@ public class BranchingExercises {
 	
 	private static void Question7() {
 		/* QUESTION 7
-		 * INPUT: integers, year of birth and current year
-		 * OUTPUT: integers, your age
+		 * INPUT: integer, the temperature in F
+		 * OUTPUT: integer, the wind chill index
 		 */
 		
-		System.out.print("Year of Birth: ");
+		System.out.print("Enter the Temperature in F: ");
+		int temp = in.nextInt();
+		System.out.print("Enter the speed of the wind in miles per hour: ");
+		int v = in.nextInt();
+		int wci;
+		
+		if (0 <= v && v <= 4) {
+			wci = temp;
+		} else if ()
 		int yearBirth = in.nextInt();
 		System.out.print("Current Year: ");
 		int curYear = in.nextInt();
