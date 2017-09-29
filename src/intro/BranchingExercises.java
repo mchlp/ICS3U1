@@ -194,6 +194,7 @@ public class BranchingExercises {
 		int age = in.nextInt();
 		System.out.print("Enter the time on a 24-hour clock: ");
 		int time = in.nextInt();
+		in.nextLine();
 
 		int price;
 
@@ -284,7 +285,7 @@ public class BranchingExercises {
 		if (cheq > 4000 || save > 5500) {
 			System.out.println("There is no service charge.");
 		} else {
-			System.out.print("The service charge is $0.15 per check.");
+			System.out.println("The service charge is $0.15 per check.");
 		}
 	}
 
