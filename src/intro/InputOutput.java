@@ -3,6 +3,8 @@ package intro;
 import java.util.Random;
 import java.util.Scanner;
 
+//Exercises for input/output
+
 public class InputOutput {
 
 	private static Scanner in;
