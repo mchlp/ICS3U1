@@ -30,6 +30,7 @@ public class FileInput {
 		System.out.println("Average of all numbers: " + (double) total / numNum);
 		System.out.println("Smallest number: " + min);
 		System.out.println("Largest number: " + max);
+		in.close();
 	}
 
 }
