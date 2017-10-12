@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class FileInput {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		File file = new File("res/random1.txt");
+		File file = new File("./res/random1.txt");
 		Scanner in = new Scanner(file);
 		int numNum = 0;
 		int total = 0;
