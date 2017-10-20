@@ -10,6 +10,8 @@ public class FileDecrypt {
 		int min = 97;
 		int max = 123;
 
+		// TODO change for loop to while loop
+
 		for (int i = 0; i <= 26; i++) {
 			for (int j = 0; j < word.length(); j++) {
 				char c = word.charAt(j);
