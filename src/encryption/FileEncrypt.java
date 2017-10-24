@@ -9,7 +9,7 @@ public class FileEncrypt {
 
 	public static void main(String[] args) {
 
-		String text = "hello world!";
+		String text;
 		final int move = 3;
 		final int minUpper = 65;
 		final int maxUpper = 90;
