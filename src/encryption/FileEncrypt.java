@@ -38,16 +38,15 @@ public class FileEncrypt {
 			int i = 0;
 			while (i < text.length()) {
 				char c = text.charAt(i);
-				if ((c >= minUpper && c <= maxUpper) || (c >= minLower && c <= maxLower)) {
-					int newIndex = ((int) c + move) >= maxLower || ((int) c + move) >= maxUpper
-							? minLower + ((int) c + move) - maxLower
-							: (int) c + move;
-					// System.out.print((char) newIndex);
-					out.print((char) newIndex);
+				int newIndex;
+				if (c >= minUpper && c <= maxUpper) {
+					newIndex = ((int) c + move) >= maxUpper ? minUpper + ((int) c + move) - minUpper : (int) c + move;
+				} else if (c >= minLower && c <= maxLower) {
+					newIndex = ((int) c + move) >= maxLower ? minLower + ((int) c + move) - minLower : (int) c + move;
 				} else {
-					// System.out.println(" ");
-					out.print(c);
+					newIndex = c;
 				}
+				out.print((char) newIndex);
 				i++;
 			}
 			out.println();
