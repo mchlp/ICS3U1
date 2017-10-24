@@ -11,8 +11,10 @@ public class FileEncrypt {
 
 		String text = "hello world!";
 		final int move = 3;
-		final int min = 97;
-		final int max = 123;
+		final int minUpper = 65;
+		final int maxUpper = 90;
+		final int minLower = 97;
+		final int maxLower = 122;
 
 		File inFile = new File("src/encryption/in.txt");
 		Scanner in = null;
@@ -33,19 +35,24 @@ public class FileEncrypt {
 		while (in.hasNextLine()) {
 			text = in.nextLine();
 			System.out.println(text);
-			for (int i = 0; i < text.length(); i++) {
+			int i = 0;
+			while (i < text.length()) {
 				char c = text.charAt(i);
-				if (c != ' ') {
-					int newIndex = ((int) c + move) >= max ? min + ((int) c + move) - max : (int) c + move;
+				if ((c >= minUpper && c <= maxUpper) || (c >= minLower && c <= maxLower)) {
+					int newIndex = ((int) c + move) >= maxLower || ((int) c + move) >= maxUpper
+							? minLower + ((int) c + move) - maxLower
+							: (int) c + move;
 					// System.out.print((char) newIndex);
-					out.append((char) newIndex);
+					out.print((char) newIndex);
 				} else {
 					// System.out.println(" ");
-					out.append(" ");
+					out.print(c);
 				}
+				i++;
 			}
+			out.println();
 		}
+		out.flush();
 		out.close();
-		System.out.println("Test");
 	}
 }
