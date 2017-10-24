@@ -1,0 +1,7 @@
+Quiz on Tuesday Oct 17, 2017
+You are responsible for knowing the material on Data types from the following chapters:
+Chapter 8
+Chapter 9A
+Chapter 9B
+Chapter 9C
+These chapters can be found at https://chortle.ccsu.edu/Java5
