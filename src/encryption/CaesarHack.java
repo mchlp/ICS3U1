@@ -1,5 +1,13 @@
 package encryption;
 
+/*
+ * Michael Pu
+ * File Encryption/Decryption Assignment - Part 3 - Brute Force Attack
+ * ICS3U1
+ * 2017/10/26
+ * Mr. Radulovic 
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -56,7 +64,7 @@ public class CaesarHack {
 		
 		int move = -1;
 		while (move > -26) {
-			System.out.println("Using Encryption Key of " + -move);
+			System.out.println("Decrypting Using Encryption Key of " + -move);
 			System.out.println("-");
 			//loop through all characters in the contents of the input file
 			int i = 0;
@@ -70,11 +78,11 @@ public class CaesarHack {
 				//NO - new ASCII value = new ASCII value
 				
 				if (c >= minUpper && c <= maxUpper) { //if character is an upper case letter
-					newChar = ((int) c + move) < minUpper ? maxUpper - (minUpper - ((int) c + move)) + 1 : (int) c + move;
+					newChar = minUpper + ((int) c - minUpper + move + 26) % 26;
 				} else if (c >= minLower && c <= maxLower) { //if character is a lower case letter
-					newChar = ((int) c + move) < minLower ? maxLower - (minLower - ((int) c + move)) + 1 : (int) c + move;
+					newChar = minLower + ((int) c - minLower + move + 26) % 26;
 				} else if (c >= minNum && c <= maxNum) { //if character is a number
-					newChar = ((int) c + move) < minNum ? maxNum - (minNum - ((int) c + move)) + 1 : (int) c + move;
+					newChar = minNum + ((int) c - minNum + move + 10) % 10;
 				} else {
 					newChar = c;
 				}

@@ -69,17 +69,12 @@ public class FileEncrypt {
 				char c = line.charAt(i);
 				int newChar; //ascii value for encrypted character
 				
-				//is the new ASCII value greater than the upper limit for that character type ? 
-				//YES - new ASCII value = lower limit + (new ASCII value - upper limit) - 1
-				//NO - new ASCII value = new ASCII value
-				
 				if (c >= minUpper && c <= maxUpper) { //if character is an upper case letter
-					newChar = ((int) c + move) > maxUpper ? minUpper + ((int) c + move) - maxUpper - 1: (int) c + move;
+					newChar = minUpper + ((int) c - minUpper + move + 26) % 26;
 				} else if (c >= minLower && c <= maxLower) { //if character is a lower case letter
-					newChar = ((int) c + move) > maxLower ? minLower + ((int) c + move) - maxLower - 1: (int) c + move;
+					newChar = minLower + ((int) c - minLower + move + 26) % 26;
 				} else if (c >= minNum && c <= maxNum) { //if character is a number
-					newChar = ((int) c + move) > maxNum ? minNum + ((int) c + move) - maxNum - 1: (int) c + move;
-					
+					newChar = minNum + ((int) c - minNum + move + 10) % 10;
 				} else {
 					newChar = c;
 				}

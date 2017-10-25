@@ -1,7 +1,6 @@
-Quiz on Tuesday Oct 17, 2017
-You are responsible for knowing the material on Data types from the following chapters:
-Chapter 8
-Chapter 9A
-Chapter 9B
-Chapter 9C
-These chapters can be found at https://chortle.ccsu.edu/Java5
+Buttons
+A button is something you can press, which will send a signal to the computer. Examples of buttons include the power button on a monitor.
+Sockets/Ports
+A socket/port is an opening you can plug a device with a corresponding plug into. It allows the computer to send or receive data to and from the connected device. An example of a socket/port is a USB port.
+Slots
+A slot is a long, flat opening which you can insert a disc into. An example of a slot is the optical disk drive slot.
