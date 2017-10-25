@@ -1,5 +1,5 @@
-Buttons
-A button is something you can press, which will send a signal to the computer. Examples of buttons include the power button on a monitor.
+1. Buttons
+2. A button is something you can press, which will send a signal to the computer. Examples of buttons include the power button on a monitor.
 Sockets/Ports
 A socket/port is an opening you can plug a device with a corresponding plug into. It allows the computer to send or receive data to and from the connected device. An example of a socket/port is a USB port.
 Slots

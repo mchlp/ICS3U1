@@ -63,7 +63,7 @@ public class FileDecrypt {
 				} else if (c >= minLower && c <= maxLower) { //if character is a lower case letter
 					newChar = minLower + ((int) c - minLower + move + 26) % 26;
 				} else if (c >= minNum && c <= maxNum) { //if character is a number
-					newChar = minNum + ((int) c - minNum + move + 10) % 10;
+					newChar = minNum + ((int) c - minNum + move + 30) % 10;
 				} else {
 					newChar = c;
 				}
