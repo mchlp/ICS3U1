@@ -22,9 +22,9 @@ public class FileDecrypt {
 
 	public static void main(String[] args) {
 
-		// final String inputFile = "encrypted_file.txt"; // path to input file
-		final String inputFile = "src/encryption/encrypted_file.txt";
-		final int move = -3; // shift
+		final String inputFile = "encrypted_file.txt"; // path to input file
+		// final String inputFile = "src/encryption/encrypted_file.txt";
+		final int move = -4; // shift
 
 		// limits for upper case letters
 		final int minUpper = 'A';

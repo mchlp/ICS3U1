@@ -23,10 +23,10 @@ public class FileEncrypt {
 
 	public static void main(String[] args) {
 
-		// final String inputFile = "test.txt"; // path to input file
-		final String inputFile = "src/encryption/test.txt";
-		// final String outputFile = "test_encrypted.txt"; // path to output file
-		final String outputFile = "src/encryption/test_encrypted.txt";
+		final String inputFile = "test.txt"; // path to input file
+		// final String inputFile = "src/encryption/test.txt";
+		final String outputFile = "test_encrypted.txt"; // path to output file
+		// final String outputFile = "src/encryption/test_encrypted.txt";
 		final int move = 3; // shift
 
 		// limits for upper case letters

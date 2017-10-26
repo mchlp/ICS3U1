@@ -22,8 +22,8 @@ public class CaesarHack {
 
 	public static void main(String[] args) {
 
-		// final String inputFile = "secret_message.txt"; // path to input file
-		final String inputFile = "src/encryption/secret_message.txt";
+		final String inputFile = "secret_message.txt"; // path to input file
+		// final String inputFile = "src/encryption/secret_message.txt";
 
 		// limits for upper case letters
 		final int minUpper = 'A';
