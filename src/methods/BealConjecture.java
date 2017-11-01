@@ -14,6 +14,10 @@ public class BealConjecture {
 		return Math.max(a, (Math.max(b, c)));
 	}
 
+	public static boolean isPrimeNumber(int a) {
+		return true;
+	}
+
 	/**
 	 * @param a
 	 * @param b
@@ -26,10 +30,12 @@ public class BealConjecture {
 		int largest = largestNumber(a, b, c);
 		int medium = (a + b + c) - smallest - largest;
 		for (int i = 2; i <= smallest; i++) {
-			if (smallest % i == 0) {
-				if (medium % i == 0) {
-					if (largest % i == 0) {
-						return i;
+			if (isPrimeNumber(i)) {
+				if (smallest % i == 0) {
+					if (medium % i == 0) {
+						if (largest % i == 0) {
+							return i;
+						}
 					}
 				}
 			}
