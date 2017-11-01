@@ -36,5 +36,4 @@ public class BealConjecture {
 		}
 		return 0;
 	}
-
 }
