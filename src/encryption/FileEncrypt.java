@@ -1,12 +1,11 @@
-package encryption;
-
 /*
  * Michael Pu
- * File Encryption/Decryption Assignment - Part 1 - Encryption
- * ICS3U1
- * 2017/10/26
- * Mr. Radulovic 
+ * ICS3U1 - FileEncrypt
+ * ICS3U1 - November 2017
+ * Mr. Radulovic
  */
+
+package encryption;
 
 import java.io.File;
 import java.io.FileNotFoundException;

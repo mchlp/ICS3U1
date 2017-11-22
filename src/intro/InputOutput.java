@@ -1,3 +1,10 @@
+/*
+ * Michael Pu
+ * ICS3U1 - InputOutput
+ * ICS3U1 - November 2017
+ * Mr. Radulovic
+ */
+
 package intro;
 
 import java.util.Random;

@@ -1,7 +1,8 @@
-/**
+/*
  * Michael Pu
- * ICS3U1
- * Beginning Exercises
+ * ICS3U1 - BeginExercises
+ * ICS3U1 - November 2017
+ * Mr. Radulovic
  */
 
 package intro;
