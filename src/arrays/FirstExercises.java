@@ -16,8 +16,8 @@ public class FirstExercises {
 
     public static void main(String[] args) {
         in = new Scanner(System.in);
-        //question1();
-        //question2();
+        question1();
+        question2();
         question3();
     }
 
