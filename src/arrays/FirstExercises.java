@@ -6,6 +6,7 @@
 
 package arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -40,20 +41,19 @@ public class FirstExercises {
 
     private static void question3() {
         System.out.println("Exercise 3");
-        int[] intList = new int[100];
+        ArrayList<Integer> intList= new ArrayList<>();
         int sum = 0;
         int nn = 0;
-        for (int i = 0; i < intList.length; i++) {
+        for (int i = 0; i < intList.size(); i++) {
             int num = in.nextInt();
             if (num < 0) {
                 break;
             } else {
-                intList[i] = num;
+                intList.add(num);
                 sum += num;
                 nn++;
             }
         }
-        System.out.println(Arrays.toString(intList));
         System.out.println("Average of Numbers Entered: " + sum / (double) nn);
     }
 }
