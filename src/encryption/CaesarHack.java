@@ -1,8 +1,7 @@
 /*
  * Michael Pu
  * ICS3U1 - CaesarHack
- * ICS3U1 - November 2017
- * Mr. Radulovic
+ * November 2017
  */
 
 package encryption;
